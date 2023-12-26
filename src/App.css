@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  font-family: 'COMICO', cursive;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background: #E7BCDE;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-wrapper {
+  background-color: #FED9ED;
+  min-height: 650px;
+  max-height: 650px;
+  min-width: 450px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 3px 6px 40px #67729D;
+  margin-bottom: 10px;
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+  position: sticky;
+  background-blend-mode: screen;
+}
+
+.app-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.header h1 {
+  color: #BB9CC0;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.task-input {
+  outline: none;
+  width: 260px;
+  padding: 15px;
+  margin-right: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  background: #FED9ED;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: 'COMICO';
+  box-shadow: 3px 6px 20px #67729D;
+  letter-spacing: 1px;
+  border: none;
+}
+
+.button-add {
+  outline: none;
+  width: 90px;
+  padding: 15px;
+  font-size: 23px;
+  border-radius: 10px;
+  font-weight: 900;
+  box-shadow: 3px 6px 20px #67729D;
+  background: #FED9ED;
+  cursor: pointer;
+  font-family: 'COMICO';
+  border-radius: 50px;
+  border: none;
+}
+
+.list-item {
+  display: flex;
+  margin: 20px 0;
+  border: 2px solid #E7BCDE;
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 30px;
+}
+
+.button-complete,
+.button-delete,
+.button-edit {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 28px;
+  border-radius: 50%;
+}
+
+.button-complete {
+  color: #88AB8E;
+  margin-right: 15px;
+}
+
+.button-edit {
+  color: #000;
+  margin-right: 15px;
+}
+
+.button-delete {
+  color: #EF4040;
+}
+
+.complete {
+  text-decoration-style: solid;
+  text-decoration-line: line-through;
+  text-decoration-color: #C1F2B0;
+}
+
+.list {
+  width: 220px;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-right: 15px;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
